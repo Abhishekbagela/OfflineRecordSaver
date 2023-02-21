@@ -3,22 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B716D062055C6D6EBC1922A /* Pods_SwiftUIWithSqlite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA767E31CF58DCC0ECA8AF1 /* Pods_SwiftUIWithSqlite.framework */; };
 		EDA94F31299FFCB700207359 /* SwiftUIWithSqliteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA94F30299FFCB700207359 /* SwiftUIWithSqliteApp.swift */; };
 		EDA94F33299FFCB700207359 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA94F32299FFCB700207359 /* ContentView.swift */; };
 		EDA94F35299FFCB800207359 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA94F34299FFCB800207359 /* Assets.xcassets */; };
 		EDA94F38299FFCB800207359 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA94F37299FFCB800207359 /* Preview Assets.xcassets */; };
+		EDA94F3F299FFE6300207359 /* AddRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA94F3E299FFE6300207359 /* AddRecordView.swift */; };
+		EDA94F41299FFE7200207359 /* ShowAllRecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA94F40299FFE7200207359 /* ShowAllRecordsView.swift */; };
+		EDA94F4329A3EEBE00207359 /* DB_Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA94F4229A3EEBE00207359 /* DB_Manager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DA767E31CF58DCC0ECA8AF1 /* Pods_SwiftUIWithSqlite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIWithSqlite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D9654B883EC053890FDACB1 /* Pods-SwiftUIWithSqlite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIWithSqlite.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIWithSqlite/Pods-SwiftUIWithSqlite.release.xcconfig"; sourceTree = "<group>"; };
+		8C06ADBBD3AEDFD44FB5DA40 /* Pods-SwiftUIWithSqlite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIWithSqlite.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIWithSqlite/Pods-SwiftUIWithSqlite.debug.xcconfig"; sourceTree = "<group>"; };
 		EDA94F2D299FFCB700207359 /* SwiftUIWithSqlite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIWithSqlite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA94F30299FFCB700207359 /* SwiftUIWithSqliteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIWithSqliteApp.swift; sourceTree = "<group>"; };
 		EDA94F32299FFCB700207359 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EDA94F34299FFCB800207359 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDA94F37299FFCB800207359 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EDA94F3E299FFE6300207359 /* AddRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordView.swift; sourceTree = "<group>"; };
+		EDA94F40299FFE7200207359 /* ShowAllRecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAllRecordsView.swift; sourceTree = "<group>"; };
+		EDA94F4229A3EEBE00207359 /* DB_Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB_Manager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +36,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B716D062055C6D6EBC1922A /* Pods_SwiftUIWithSqlite.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35D56DD785F8EAECCA7D83FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DA767E31CF58DCC0ECA8AF1 /* Pods_SwiftUIWithSqlite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		65EC8709EF261A69D358957E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C06ADBBD3AEDFD44FB5DA40 /* Pods-SwiftUIWithSqlite.debug.xcconfig */,
+				7D9654B883EC053890FDACB1 /* Pods-SwiftUIWithSqlite.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EDA94F24299FFCB700207359 = {
 			isa = PBXGroup;
 			children = (
 				EDA94F2F299FFCB700207359 /* SwiftUIWithSqlite */,
 				EDA94F2E299FFCB700207359 /* Products */,
+				65EC8709EF261A69D358957E /* Pods */,
+				35D56DD785F8EAECCA7D83FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +83,9 @@
 			children = (
 				EDA94F30299FFCB700207359 /* SwiftUIWithSqliteApp.swift */,
 				EDA94F32299FFCB700207359 /* ContentView.swift */,
+				EDA94F3E299FFE6300207359 /* AddRecordView.swift */,
+				EDA94F40299FFE7200207359 /* ShowAllRecordsView.swift */,
+				EDA94F4229A3EEBE00207359 /* DB_Manager.swift */,
 				EDA94F34299FFCB800207359 /* Assets.xcassets */,
 				EDA94F36299FFCB800207359 /* Preview Content */,
 			);
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDA94F3B299FFCB800207359 /* Build configuration list for PBXNativeTarget "SwiftUIWithSqlite" */;
 			buildPhases = (
+				BCCECAD51179A0545B6BDD07 /* [CP] Check Pods Manifest.lock */,
 				EDA94F29299FFCB700207359 /* Sources */,
 				EDA94F2A299FFCB700207359 /* Frameworks */,
 				EDA94F2B299FFCB700207359 /* Resources */,
+				45D6C5F53FFE95E646FB6AA5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +138,7 @@
 				};
 			};
 			buildConfigurationList = EDA94F28299FFCB700207359 /* Build configuration list for PBXProject "SwiftUIWithSqlite" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -132,12 +167,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		45D6C5F53FFE95E646FB6AA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIWithSqlite/Pods-SwiftUIWithSqlite-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftUIWithSqlite/Pods-SwiftUIWithSqlite-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftUIWithSqlite/Pods-SwiftUIWithSqlite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCCECAD51179A0545B6BDD07 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftUIWithSqlite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EDA94F29299FFCB700207359 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EDA94F33299FFCB700207359 /* ContentView.swift in Sources */,
+				EDA94F4329A3EEBE00207359 /* DB_Manager.swift in Sources */,
+				EDA94F3F299FFE6300207359 /* AddRecordView.swift in Sources */,
+				EDA94F41299FFE7200207359 /* ShowAllRecordsView.swift in Sources */,
 				EDA94F31299FFCB700207359 /* SwiftUIWithSqliteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -261,6 +341,7 @@
 		};
 		EDA94F3C299FFCB800207359 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C06ADBBD3AEDFD44FB5DA40 /* Pods-SwiftUIWithSqlite.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -275,6 +356,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -290,6 +372,7 @@
 		};
 		EDA94F3D299FFCB800207359 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D9654B883EC053890FDACB1 /* Pods-SwiftUIWithSqlite.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,6 +387,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
